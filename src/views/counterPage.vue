@@ -11,6 +11,7 @@
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/counter">Counter</RouterLink>
+        <a href="https://github.com/olatunde1998/AltSchool-Vue-Exam3">Github</a>
         <img
           alt="rasheed logo"
           class="rasheed-img"
