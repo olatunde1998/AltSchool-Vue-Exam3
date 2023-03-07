@@ -85,7 +85,6 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 1440px;
-  background: #4f57cf;
   vertical-align: center;
   background: #4a9edb;
 }
@@ -99,10 +98,11 @@ header {
 .altschool-name{
   text-align: center;
   color: #4a9edb;
+  padding-left: 0px 10px;
 
 }
 .altschool-history {
-  padding-left: 10px;
+  padding:0px 10px;
   line-height:32px;
 }
 .logo {
@@ -115,16 +115,16 @@ header {
   border: 1px solid white;
   width: 32px;
   height: 32px;
-  margin-right: 30px;
+
 }
 nav {
-  width: 100%;
   font-size: 12px;
-  text-align: center;
   margin-top: 2rem;
   display: flex;
   align-items: center;
   margin: auto 0;
+  margin-right: 10px;
+  width: 80%;
 }
 
 nav a.router-link-exact-active {
@@ -140,7 +140,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding: 0 1rem;
+  padding: 0 .5rem;
   border-left: 1px solid var(--color-border);
   text-decoration: none;
   color: white;
@@ -190,9 +190,6 @@ main {
     justify-content: space-between;
     padding-right: calc(var(--section-gap) / 2);
     max-width: 1440px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    background: #4a9edb;
   }
 
   .logo {
@@ -206,8 +203,6 @@ main {
     flex-wrap: wrap;
   }
   nav {
-    text-align: left;
-    margin-left: -1rem;
     font-size: 1rem;
     padding: 1rem 0;
     margin-top: 1rem;

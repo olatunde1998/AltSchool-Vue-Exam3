@@ -1,5 +1,5 @@
 <template>
-<header>
+  <header>
     <img
       alt="AltSchool logo"
       class="logo"
@@ -22,16 +22,22 @@
       </nav>
     </div>
   </header>
- <div>
-    <p>This is an counter page</p>
-    <p>{{$store.state.counter}}</p>
-    <increment-counter/>
-    <decrement-counter/>
-    <reset-counter/>
-    <set-value/>
-    <router-link to='/'>Back to home</router-link>
+  <div class="counter-wrapper">
+    <div class="counter-box">
+      <p class="count-heading">Counting App</p>
+      <p class="count">{{ $store.state.counter }}</p>
+      <div class="button-box">
+        <increment-counter />
+        <decrement-counter />
+        <reset-counter />
+      </div>
+      <div class="input-value">
+      <input type="number" placeholder="type your counting" />
+      <set-value />
+      </div>
+      <router-link to="/">Back to home</router-link>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -40,14 +46,47 @@ import decrementCounter from "@/components/decrementCounter";
 import resetCounter from "@/components/resetCounter";
 import setValue from "@/components/setValue";
 
-
 export default {
-  components:{
+  components: {
     incrementCounter,
     decrementCounter,
     resetCounter,
-    setValue
-  }
-}
+    setValue,
+  },
+};
 </script>
+<style>
+.counter-wrapper{
+  border:2px solid red;
+  height: 100vh;
+  margin-top: 0px;
+  background-color: rgb(124, 205, 214);
+}
+.counter-box {
+  max-width: 370px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  border: 2px solid green;
+}
+.button-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.count-heading{
+  color:#4a9edb;
 
+}
+.count{
+  font-size: 24px;
+  color:#4a9edb;
+}
+.input-value{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+   justify-content: center;
+}
+
+</style>
