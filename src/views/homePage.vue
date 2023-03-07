@@ -1,5 +1,5 @@
 <template>
-<header>
+  <header>
     <img
       alt="AltSchool logo"
       class="logo"
@@ -11,117 +11,176 @@
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/counter">Counter</RouterLink>
-        <img
-          alt="rasheed logo"
-          class="rasheed-img"
-          src="@/assets/rasheed_img.png"
-          width="125"
-          height="125"
-        />
+        <a href="https://github.com/olatunde1998/AltSchool-Vue-Exam3">Github</a>
+
+        <div class="rasheed-box">
+          <img
+            alt="rasheed logo"
+            class="rasheed-img"
+            src="@/assets/rasheed_img.png"
+            width="125"
+            height="125"
+          />
+        </div>
       </nav>
     </div>
   </header>
   <main>
-    <h3 class='text-red-800 font-bold border-2 border-red-800'>
-      Welcome to Rasheed Olatunde <br />
-      AltSchool Third Semester Project
-    </h3>
-    <p>
-      As the name suggests, AltSchool Africa is different from the traditional
-      institutions. We are a school for individuals looking to gain technical
-      skills and kickstart a career in Tech. AltSchool Africa takes a
-      non-traditional approach to learning by teaching courses directly
-      connected with the selected track.
-    </p>
-    <p>
-      In March 2022, Gov. Ugwuanyi inaugurated 34 brand new model Customary
-      Courts (two per local government) across the 17 local government areas of
-      the state. Below are some facilities of the State Judiciary:
-    </p>
-    <!-- about the student-->
-    <p>
-      AltSchool ID: <span>{{ studentDetails.identification }}</span>
-    </p>
-    <p>
-      Full Name: <span> {{ studentDetails.fullName }}</span>
-    </p>
-    <p>
-      Phone Number: <span>{{ studentDetails.mobileNumber }}</span>
-    </p>
-    <p>
-      E-mail: <span>{{ studentDetails.email }}</span>
-    </p>
-    <p>
-      Portfolio:
-      <a href="https://geodev-portfolio-app.netlify.app/">{{
-        studentDetails.portfolioWebsite
-      }}</a>
-    </p>
+    <!-- altschool wrapper section-->
+    <div class="altschool-wrapper">
+      <h3 class="welcome">
+        Welcome 👋 <br />
+        I'm Rasheed Olatunde
+      </h3>
+      <div>
+        <h3 class="altschool-name">AltSchool Africa Third Semester Exam </h3>
+        <p class="altschool-history">
+          As the name suggests, AltSchool Africa is different from the
+          traditional institutions. We are a school for individuals looking to
+          gain technical skills and kickstart a career in Tech. AltSchool Africa
+          takes a non-traditional approach to learning by teaching courses
+          directly connected with the selected track.
+        </p>
+      </div>
+    </div>
+    <div class="about-project">
+      <!-- about the student-->
+      <div class="about-wrapper">
+        <about-me />
+      </div>
+      <!--project section-->
+      <div class="project-wrapper">
+        <project-info />
+      </div>
+    </div>
+    <!-- skill/ technology used-->
+    <div class="skills">
+      <skills-used />
+    </div>
   </main>
+  <footer-section />
 </template>
 
-<script setup>
-import { reactive } from "@vue/reactivity";
+<script>
+import aboutMe from "@/components/aboutMe";
+import skillsUsed from "@/components/skillsUsed";
+import footerSection from "@/components/footerSection";
+import projectInfo from "@/components/projectInfo";
 
-const studentDetails = reactive({
-  fullName: "Olatunde Rasheed",
-  school: "AltSchool",
-  identification: "ALT/SE/5768",
-  email: "olatunde336@gmail.com",
-  mobileNumber: "+2348133642798",
-  portfolioWebsite: "https://geodev-portfolio-app.netlify.app/",
-});
-
+export default {
+  components: {
+    aboutMe,
+    skillsUsed,
+    footerSection,
+    projectInfo,
+  },
+};
 </script>
-
 
 <style>
 header {
   line-height: 1.5;
   max-height: 100vh;
-  display:flex;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  background: #4f57cf;
+  vertical-align: center;
+  background: #4a9edb;
 }
+.altschool-wrapper {
+  margin-top: 30px;
+}
+.welcome{
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
+.altschool-name{
+  text-align: center;
+  color: #4a9edb;
 
+}
+.altschool-history {
+  padding-left: 10px;
+  line-height:32px;
+}
 .logo {
-    margin: 0 2rem 0 0;
-    width:70px;
-    height:70px;
-  }
-.rasheed-img{
-  border-radius:50%;
-  border:2px solid gray;
-  width:32px;
-  height:32px;
-  margin-right:30px;
-  
+  margin: 0 2rem 0 0;
+  width: 60px;
+  height: 60px;
 }
-
+.rasheed-img {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 32px;
+  height: 32px;
+  margin-right: 30px;
+}
 nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
-  display:flex;
+  display: flex;
   align-items: center;
+  margin: auto 0;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: #47c2e1;
+  text-decoration: none;
+  color: red;
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  color: red;
+  text-decoration: none;
 }
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  text-decoration: none;
+  color: white;
 }
 
 nav a:first-of-type {
   border: 0;
+}
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.about-wrapper,.project-wrapper {
+  background: #4a9edb;
+  height: 250px;
+  padding-top:10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin: 10px 10px;
+  padding:10px;
+}
+.about-project{
+  width:100%;
+  margin: 70px 0px;
+}
+.skills {
+  margin-bottom: 70px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+
+.about-project{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+.about-wrapper,.project-wrapper {
+ width: 50%;
+}
+
 }
 
 @media (min-width: 1024px) {
@@ -130,6 +189,10 @@ nav a:first-of-type {
     place-items: center;
     justify-content: space-between;
     padding-right: calc(var(--section-gap) / 2);
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #4a9edb;
   }
 
   .logo {
@@ -146,10 +209,8 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
 }
-
 </style>
