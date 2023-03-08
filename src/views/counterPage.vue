@@ -24,16 +24,23 @@
   </header>
   <div class="counter-wrapper">
     <div class="counter-box">
-      <p class="count-heading">Counting App</p>
-      <p class="count">{{ $store.state.counter }}</p>
+      <div class="heading-count">
+        <p class="count-heading">Counting App</p>
+        <p class="count">{{ $store.state.counter }}</p>
+      </div>
+      <!-- <p class="count">{{$store.state.counter}}</p> -->
       <div class="button-box">
         <increment-counter />
         <decrement-counter />
         <reset-counter />
       </div>
       <div class="input-value">
-      <input type="number" placeholder="type your counting" />
-      <set-value />
+        <input
+          type="number"
+          placeholder="type your counting"
+          v-model="$store.state.counter"
+        />
+        <set-value />
       </div>
       <router-link to="/">Back to home</router-link>
     </div>
@@ -56,11 +63,14 @@ export default {
 };
 </script>
 <style>
-.counter-wrapper{
-  border:2px solid red;
+.counter-wrapper {
+  border: 2px solid red;
   height: 100vh;
   margin-top: 0px;
   background-color: rgb(124, 205, 214);
+}
+.heading-count{
+  height: 120px;
 }
 .counter-box {
   max-width: 370px;
@@ -74,19 +84,17 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
 }
-.count-heading{
-  color:#4a9edb;
-
+.count-heading {
+  color: #4a9edb;
 }
-.count{
+.count {
   font-size: 24px;
-  color:#4a9edb;
+  color: #4a9edb;
 }
-.input-value{
+.input-value {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-   justify-content: center;
+  justify-content: center;
 }
-
 </style>
