@@ -1,13 +1,13 @@
 <template>
     <div>
-    <button class="set-value" @click='reset'>Set Value</button>
+    <button class="set-value" @click='setValue'>Set Value</button>
     </div>
 </template>
 <script>
 export default{
     methods:{
       reset(){
-        this.$store.dispatch('reset', 0)
+        this.$store.dispatch('setValue')
       }
     }
   }
@@ -22,9 +22,6 @@ export default{
   width: 100px;
   margin-left: 10px;
   font-size: 16px;
-
-
-
 
 }
 .set-value:hover{
