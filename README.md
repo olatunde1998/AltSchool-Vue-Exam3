@@ -44,4 +44,4 @@ Vercel was used to deploy the app.
 The MIT License - Copyright (c) 2023 - Present, rasheed-olatunde altschool-vue-exam-3.vercel.app/  Storage Service.
 
 # Author
-Rasheed Olatunde
+Rasheed Olatunde (AltSchooler)
