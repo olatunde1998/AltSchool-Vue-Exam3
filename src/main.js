@@ -28,6 +28,9 @@ const store = createStore({
     reset(state, payload) {
         state.counter = state.counter * payload;
     },
+    setValue(state) {
+     return state.counter
+  },
   },
   actions: {
     increment(context, payload) {
@@ -39,6 +42,9 @@ const store = createStore({
     reset(context, payload) {
         context.commit("reset", payload);
     },
+    setValue(context) {
+      context.commit("setValue");
+  },
   },
 });
 
