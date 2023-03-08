@@ -1,4 +1,4 @@
-# AltSchool Third Semester Exam ![<img src='/src/assets/altschool.png' width='50' height='50' />](altschool image)
+# AltSchool Third Semester Exam ![Minion](/src/assets/altschool.png){ width=50px }
 
 Hello, 👋 \
 I'm Rasheed Olatunde (AltSchooler) currently study in AltSchool Africa\
