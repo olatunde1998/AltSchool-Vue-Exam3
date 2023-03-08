@@ -1,4 +1,4 @@
-# AltSchool Third Semester Exam ![Minion](assets/altschool.png)
+# AltSchool Third Semester Exam ![Minion](/src/assets/altschool.png)
 
 Hello, 👋 \
 I'm Rasheed Olatunde (AltSchooler) currently study in AltSchool Africa\
@@ -22,7 +22,7 @@ Rasheed Olatunde
  + [Github Actions](https://docs.github.com/en/actions/) 
 
 # Prototype
-![Minion](assets/project-img.jpeg)
+![Minion](/src/assets/project-img.jpeg)
  
 ## How to Contribute
 
@@ -35,13 +35,13 @@ $ cd AltSchool-Vue-Exam3
 3. Open your terminal and type this command `yarn add vue` to add the vue dependency to the app in the development mode. then after the installation of the vue dependency type this command  `yarn serve` to run the app in your local environment \
 Open [http://localhost:8080/](http://localhost:8080/) to view it in your browser.
 
-```
-### Deployment
+
+# Deployment
 Vercel was used to deploy the app. 
  + [Netlify](https://vercel.com/dashboard)
 
-### License
+# License
 The MIT License - Copyright (c) 2023 - Present, rasheed-olatunde altschool-vue-exam-3.vercel.app/  Storage Service.
 
-### Author
+# Author
 Rasheed Olatunde
