@@ -11,10 +11,13 @@ export default {};
 <style>
 .copywrite {
   height: 10vh;
-  background: #4a9edb;
+  background: #A5CFED;
   display:flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #4A9EDB;
+}
+.copywrite>p{
+  font-size: 20px;
 }
 </style>
