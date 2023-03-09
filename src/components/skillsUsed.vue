@@ -63,7 +63,9 @@
 
 }
 .technology-used{
-  color: #4a9edb;
+  color: #4A9EDB;
+  padding-left: 10px;
+
 
 }
 </style>

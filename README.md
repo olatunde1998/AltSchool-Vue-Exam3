@@ -1,8 +1,9 @@
 # AltSchool Third Semester Exam
 
 Hello, 👋 \
-I'm Rasheed Olatunde (AltSchooler) currently study in AltSchool Africa\
-Just want to say a big thank to Altschool Africa  for the grace and opportunity giving to me to learn new frontend technology ( VueJs) with the school
+I'm Rasheed Olatunde (AltSchooler) currently studying Frontend Software Engineering at AltSchool Africa\
+Just want to say a big thank to Altschool Africa  for the grace and opportunity giving to me to learn new frontend technology ( VueJs).
+```
 Here's some notes about my submission:
 
 1. A link to the project repository:-  https://github.com/olatunde1998/AltSchool-Vue-Exam3
@@ -11,7 +12,6 @@ Here's some notes about my submission:
 Thank you very much AltSchool Africa.\
 Best regards\
 Rasheed Olatunde
-
 
 # Technologies 
  + [JavaScript](https://javascript.info/) 
@@ -24,7 +24,7 @@ Rasheed Olatunde
 # Prototype
 !![Minion](/src/assets/project-img.jpeg)
  
-## How to Contribute
+# How to Contribute
 
 1. Clone the repository 
 $ git clone https://github.com/olatunde1998/AltSchool-Vue-Exam3
@@ -38,7 +38,7 @@ Open [http://localhost:8080/](http://localhost:8080/) to view it in your browser
 
 # Deployment
 Vercel was used to deploy the app. 
- + [Netlify](https://vercel.com/dashboard)
+ + [Vercel](https://vercel.com/dashboard)
 
 # License
 The MIT License - Copyright (c) 2023 - Present, rasheed-olatunde altschool-vue-exam-3.vercel.app/  Storage Service.

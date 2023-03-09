@@ -1,6 +1,6 @@
 <template lang="">
-  <h3 class='about-me'>About Me 👎</h3>
-  <div class='about-info'>
+  <h3 class="about-me">About Me 👎</h3>
+  <div class="about-info">
     <p>
       AltSchool ID: <span>{{ studentDetails.identification }}</span>
     </p>
@@ -15,7 +15,7 @@
     </p>
     <p>
       Portfolio:
-      <a class='portfolio' href="https://geodev-portfolio-app.netlify.app/">{{
+      <a class="portfolio" href="https://geodev-portfolio-app.netlify.app/">{{
         studentDetails.portfolioWebsite
       }}</a>
     </p>
@@ -25,7 +25,7 @@
 import { reactive } from "@vue/reactivity";
 
 const studentDetails = reactive({
-  fullName: "Olatunde Rasheed",
+  fullName: "Rasheed Olatunde",
   school: "AltSchool",
   identification: "ALT/SE/5768",
   email: "olatunde336@gmail.com",
@@ -34,14 +34,16 @@ const studentDetails = reactive({
 });
 </script>
 <style>
-    .about-info{
-        padding-left: 10px;
-    }
-    .portfolio{
-        text-decoration: none;
-        color: red;
-    }
-    .about-me{
-        color: white;
-    }
+.about-info {
+  padding-left: 10px;
+  color: rgb(81, 71, 71);
+  font-weight: 200;
+}
+.portfolio {
+  text-decoration: none;
+  color: rgb(81, 71, 71);
+}
+.about-me {
+  color: white;
+}
 </style>

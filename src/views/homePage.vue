@@ -1,4 +1,5 @@
 <template>
+  <div class="header-box">
   <header>
     <img
       alt="AltSchool logo"
@@ -25,12 +26,13 @@
       </nav>
     </div>
   </header>
+  </div>
   <main>
     <!-- altschool wrapper section-->
     <div class="altschool-wrapper">
       <h3 class="welcome">
         Welcome 👋 <br />
-        I'm Rasheed Olatunde
+        I'm Rasheed Olatunde (AltSchooler)
       </h3>
       <div>
         <h3 class="altschool-name">AltSchool Africa Third Semester Exam </h3>
@@ -41,6 +43,8 @@
           takes a non-traditional approach to learning by teaching courses
           directly connected with the selected track.
         </p>
+        <button class="project-btn"><RouterLink to="/counter" class="project-link">Check my Exam Project  ⬅️</RouterLink></button>
+
       </div>
     </div>
     <div class="about-project">
@@ -78,6 +82,11 @@ export default {
 </script>
 
 <style>
+.header-box{
+  background: #4a9edb;
+
+
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -86,29 +95,48 @@ header {
   align-items: center;
   max-width: 1440px;
   vertical-align: center;
-  background: #4a9edb;
+  background: #A5CFED;
+  margin: 0 auto;
 }
 .altschool-wrapper {
   margin-top: 30px;
 }
 .welcome{
   padding-left: 10px;
-  margin-bottom: 50px;
+  color: #4A9EDB;
+  line-height: 30px;
 }
 .altschool-name{
   text-align: center;
   color: #4a9edb;
+  font-size: 16px;
   padding-left: 0px 10px;
 
 }
 .altschool-history {
   padding:0px 10px;
   line-height:32px;
+  color: #75787a;
+}
+.project-btn{
+  padding: 16px;
+  background-color: #4a9edb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+
+}
+.project-link{
+  text-decoration: none;
+  color: white;
 }
 .logo {
   margin: 0 2rem 0 0;
   width: 60px;
   height: 60px;
+  padding-left: 10px;
+
 }
 .rasheed-img {
   border-radius: 50%;
@@ -118,7 +146,7 @@ header {
 
 }
 nav {
-  font-size: 12px;
+  font-size: 15px;
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -128,13 +156,12 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: #47c2e1;
   text-decoration: none;
-  color: red;
+  color: white;
 }
 
 nav a.router-link-exact-active:hover {
-  color: red;
+  color: white;
   text-decoration: none;
 }
 
@@ -143,7 +170,7 @@ nav a {
   padding: 0 .5rem;
   border-left: 1px solid var(--color-border);
   text-decoration: none;
-  color: white;
+  color: #4A9EDB;
 }
 
 nav a:first-of-type {
@@ -154,12 +181,13 @@ main {
   margin: 0 auto;
 }
 .about-wrapper,.project-wrapper {
-  background: #4a9edb;
+    background-color: #7fb9e2;
+
   height: 250px;
   padding-top:10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
-  margin: 10px 10px;
+  margin: 30px 10px;
   padding:10px;
 }
 .about-project{

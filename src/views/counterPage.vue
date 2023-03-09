@@ -1,27 +1,31 @@
 <template>
-  <header>
-    <img
-      alt="AltSchool logo"
-      class="logo"
-      src="@/assets/altschool.png"
-      width="125"
-      height="125"
-    />
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/counter">Counter</RouterLink>
-        <a href="https://github.com/olatunde1998/AltSchool-Vue-Exam3">Github</a>
-        <img
-          alt="rasheed logo"
-          class="rasheed-img"
-          src="@/assets/rasheed_img.png"
-          width="125"
-          height="125"
-        />
-      </nav>
-    </div>
-  </header>
+  <div class="header-box">
+    <header>
+      <img
+        alt="AltSchool logo"
+        class="logo"
+        src="@/assets/altschool.png"
+        width="125"
+        height="125"
+      />
+      <div class="wrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/counter">Counter</RouterLink>
+          <a href="https://github.com/olatunde1998/AltSchool-Vue-Exam3"
+            >Github</a
+          >
+          <img
+            alt="rasheed logo"
+            class="rasheed-img"
+            src="@/assets/rasheed_img.png"
+            width="125"
+            height="125"
+          />
+        </nav>
+      </div>
+    </header>
+  </div>
   <div class="counter-wrapper">
     <div class="counter-box">
       <div class="heading-count">
@@ -42,7 +46,6 @@
         />
         <set-value />
       </div>
-      <router-link to="/">Back to home</router-link>
     </div>
   </div>
 </template>
@@ -63,21 +66,30 @@ export default {
 };
 </script>
 <style>
+.header-box {
+  background: #A5CFED;
+}
 .counter-wrapper {
-  border: 2px solid red;
+  border-top: 2px solid white;
   height: 100vh;
   margin-top: 0px;
-  background-color: rgb(124, 205, 214);
+  background-color: #A5CFED;
 }
-.heading-count{
+.heading-count {
   height: 120px;
 }
 .counter-box {
-  max-width: 370px;
+  max-width: 350px;
   text-align: center;
   margin: 0 auto;
   margin-top: 60px;
-  border: 2px solid green;
+  background-color: white;
+
+  border: 2px solid rgba(100, 100, 111, 0.2);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 .button-box {
   display: flex;
