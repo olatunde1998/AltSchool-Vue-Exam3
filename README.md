@@ -13,7 +13,9 @@ Thank you very much AltSchool Africa.\
 Best regards\
 Rasheed Olatunde
 
+```
 # Technologies 
+
  + [JavaScript](https://javascript.info/) 
  + [VueJs](https://vuejs.org/) 
  + [VueX](https://vuex.vuejs.org/)
@@ -22,7 +24,7 @@ Rasheed Olatunde
  + [Github Actions](https://docs.github.com/en/actions/) 
 
 # Prototype
-!![Minion](/src/assets/project-img.jpeg)
+![Minion](/src/assets/project-img.jpeg)
  
 # How to Contribute
 
