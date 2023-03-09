@@ -6,9 +6,9 @@ Just want to say a big thank to Altschool Africa  for the grace and opportunity 
 ```
 Here's some notes about my submission:
 
-1. A link to the project repository:-  + [https://github.com/olatunde1998/AltSchool-Vue-Exam3](https://github.com/olatunde1998/AltSchool-Vue-Exam3)
+1. A link to the project repository  [project repository link](https://github.com/olatunde1998/AltSchool-Vue-Exam3)
 
-2. A publicly live hosted URL of the challenge + [https://altschool-vue-exam-3.vercel.app/](https://altschool-vue-exam-3.vercel.app/)  
+2. A publicly live hosted URL of the challenge [project live link](https://altschool-vue-exam-3.vercel.app/)  
 
 Thank you very much AltSchool Africa.
 Best regards
