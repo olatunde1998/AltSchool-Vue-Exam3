@@ -21,13 +21,13 @@
     </div>
     <div class="html-box">
       <div class="html-img">
-        <img src="@/assets/vuex.jpg" alt="" width="50" height="50" />
+        <img src="@/assets/vuex.png" alt="" width="50" height="50" />
       </div>
       <p>Vuex</p>
     </div>
     <div class="html-box">
       <div class="html-img">
-        <img src="@/assets/vercel.jpg" alt="" width="100" height="50" />
+        <img src="@/assets/vercel.png" alt="" width="100" height="50" />
       </div>
       <p>Vercel</p>
     </div>
@@ -47,7 +47,7 @@
   flex-wrap: wrap;
 }
 .html-box {
-  border: 1px solid #4a9edb;
+  border: .5px solid #4a9edb;
   width: 100px;
   display: flex;
   flex-direction: column;
@@ -60,6 +60,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #A5CFED;
+
 
 }
 .technology-used{
