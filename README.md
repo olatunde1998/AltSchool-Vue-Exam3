@@ -5,6 +5,10 @@ I'm Rasheed Olatunde (AltSchooler) currently studying Frontend Software Engineer
 Just want to say a big thank to Altschool Africa  for the grace and opportunity giving to me to learn new frontend technology ( VueJs).
 ```
 Here's some notes about my submission:
++ [https://github.com/olatunde1998/AltSchool-Vue-Exam3](https://github.com/olatunde1998/AltSchool-Vue-Exam3) 
+A link to the project repository + [https://github.com/olatunde1998/AltSchool-Vue-Exam3](https://github.com/olatunde1998/AltSchool-Vue-Exam3)
+
+A link to the project repository [https://github.com/olatunde1998/AltSchool-Vue-Exam3](https://github.com/olatunde1998/AltSchool-Vue-Exam3)
 
 1. A link to the project repository  https://github.com/olatunde1998/AltSchool-Vue-Exam3
 
