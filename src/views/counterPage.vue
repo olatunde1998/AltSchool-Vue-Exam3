@@ -67,13 +67,13 @@ export default {
 </script>
 <style>
 .header-box {
-  background: #A5CFED;
+  background: #a5cfed;
 }
 .counter-wrapper {
   border-top: 2px solid white;
   height: 100vh;
   margin-top: 0px;
-  background-color: #A5CFED;
+  background-color: #a5cfed;
 }
 .heading-count {
   height: 120px;

@@ -1,25 +1,25 @@
 <template lang="">
   <h3 class="about-me">About Me 👎</h3>
-  <div class="about-info">
-    <p>
+  <ul class="about-info">
+    <li>
       AltSchool ID: <span>{{ studentDetails.identification }}</span>
-    </p>
-    <p>
+    </li>
+    <li>
       Full Name: <span> {{ studentDetails.fullName }}</span>
-    </p>
-    <p>
+    </li>
+    <li>
       Phone Number: <span>{{ studentDetails.mobileNumber }}</span>
-    </p>
-    <p>
+    </li>
+    <li>
       E-mail: <span>{{ studentDetails.email }}</span>
-    </p>
-    <p>
+    </li>
+    <li>
       Portfolio:
       <a class="portfolio" href="https://geodev-portfolio-app.netlify.app/">{{
         studentDetails.portfolioWebsite
       }}</a>
-    </p>
-  </div>
+    </li>
+  </ul>
 </template>
 <script setup>
 import { reactive } from "@vue/reactivity";
@@ -27,7 +27,7 @@ import { reactive } from "@vue/reactivity";
 const studentDetails = reactive({
   fullName: "Rasheed Olatunde",
   school: "AltSchool",
-  identification: "ALT/SE/5768",
+  identification: "ALT/SOE/022/5768",
   email: "olatunde336@gmail.com",
   mobileNumber: "+2348133642798",
   portfolioWebsite: "portfolio website",
@@ -45,5 +45,9 @@ const studentDetails = reactive({
 }
 .about-me {
   color: white;
+}
+li {
+  margin-top: 16px;
+  margin-left: 10px;
 }
 </style>
